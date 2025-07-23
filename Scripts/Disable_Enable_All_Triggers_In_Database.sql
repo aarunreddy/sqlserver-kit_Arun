@@ -33,7 +33,7 @@ EXEC sys.sp_executesql @Disable_Statement;
 
 -- Perpare Variable Script for Execution
 DECLARE @Enable_Statement nvarchar(max) = (
-   SELECT tmp.DisableTriggerStatement + CHAR(10) AS "data()"
+   SELECT tmp.EnableTriggerStatementTriggerStatement + CHAR(10) AS "data()"
      FROM #Triggers tmp
     FOR XML PATH('')
     );
