@@ -3343,6 +3343,21 @@ Function: SQL 9 – After 4610 & 4618 you can still customize the quota for Toke
 Link: https://support.microsoft.com/kb/959823
 
 
+<a id="4631"></a>
+#### Trace Flag: 4631
+Function: Disables SHA2_256/AES256 for hashing passwords that generate encryption keys. Starting in SQL Server 2017 (14.x), SHA2 is used instead of SHA1. This means extra steps might be necessary to have your SQL Server 2017 (14.x) installation decrypt items that were encrypted by SQL Server 2016 (13.x)<br />
+Link: [Encryption Changes in SQL Server 2017 CU2](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/create-identical-symmetric-keys-on-two-servers?view=sql-server-ver17#encryption-changes-in-sql-server-2017-cu2)<br />
+Link: [KB 4053407: SQL Server 2017 cannot decrypt data encrypted by earlier versions of SQL Server using the same symmetric key](https://support.microsoft.com/kb/4053407)<br />
+Scope: global only
+
+
+<a id="4675"></a>
+#### Trace Flag: 4675
+Function: Enable checks on create credential for managed identity on a SQL Server on Azure VM if Microsoft Entra authentication is enabled. Enables diagnostics for the CREATE CREDENTAIL WITH IDENTITY = 'Managed Identity' statement. The trace flag provides information about the primary managed identity and its setting for SQL Server on Azure VM.<br />
+Link: [DBCC TRACEON Trace Flags](https://learn.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql?view=sql-server-ver17)<br />
+Scope: global or session
+
+
 <a id="5004"></a>
 #### Trace Flag: 5004
 Function: Pauses TDE encryption scan and causes encryption scan worker to exit without doing any work.
