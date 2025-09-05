@@ -4,7 +4,7 @@ SET ANSI_NULLS ON;
 GO
 SET QUOTED_IDENTIFIER ON;
 GO
-ALTER PROCEDURE [dbo].[spDBA_job_notification]
+CREATE or ALTER PROCEDURE [dbo].[spDBA_job_notification]
     @jobid UNIQUEIDENTIFIER
 AS /*********************************************************************************************************
  Purpose: SQL Job Agent does not send the error messages on failure, 
