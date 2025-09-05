@@ -18,7 +18,7 @@ go
  
 **********************************************/
  
-CREATE PROCEDURE sp_ChangeDatabaseOwnerShip
+CREATE or ALTER PROCEDURE sp_ChangeDatabaseOwnerShip
 (
 @DBOwner NVARCHAR(128) = NULL,
 @Help BIT = 0
